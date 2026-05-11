@@ -7,35 +7,26 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
- * Servlet implementation class ControleLongin
- */
-@WebServlet("/ControleLongin")
+@WebServlet("/Logar")
 public class ControleLongin extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
+	 	
     public ControleLongin() {
         super();
-        // TODO Auto-generated constructor stub
     }
-
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
-	}
-
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+		String login = request.getParameter("user");
+		String senha = request.getParameter("senha");
+		
+		String useradm = "Admin";
+		String senhaadm = "12345";
+		 
+		if (login.equals(useradm) && senha.equals(senhaadm)) {
+			response.sendRedirect("index.jsp");
+			System.out.println("funciona");
+		}else {
+			response.sendRedirect("index.jsp");
+		}
 	}
 
 }
