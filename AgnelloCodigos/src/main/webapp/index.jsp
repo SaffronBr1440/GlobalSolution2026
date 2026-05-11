@@ -53,12 +53,17 @@ Nosso objetivo é invisibilizar a distância: entregamos uma experiência idênt
 					<div class=quizEsq>
 						<p style="font-size: 20px">não sabe o que escolher ? nós te ajudamos</p>
 						<form action="quiz" class=quizEsq>
-							 O que será o prato principal?
+							 O que vai comer ?
 							 <select name ="prato principal">
 							 	<option value="Carne vermelha">Carne vermelha
 							 	<option value="peixe">Peixe
 							 	<option value="frango ">Frango
 							 	<option value="Sem carne ">Sem carne
+							 	<option value="massas ">Massa
+							 	<option value="queijo ">Queijo
+							 	<option value="petisco ">Petiscos
+							 	<option value="fruta ">Frutas
+							 	<option value="sebremesa ">Sobremesa
 							 </select>
 							 <br>
 							 Qual a intensidade do tempero ou do molho?
@@ -77,9 +82,10 @@ Nosso objetivo é invisibilizar a distância: entregamos uma experiência idênt
 							 <br>
 							 Qual sensação você prefere no paladar agora?
 							 <select name ="Temparatura">
-							 	<option value="acido">Acido
-							 	<option value="doce">Doce
-							 	<option value="seco">Seco
+							 	<option value="encorpado">Encorpado
+							 	<option value="aveludado">Aveludado
+							 	<option value="vibrante">Vibrante
+							 	<option value="refrescante">Refrescante
 							 </select>
 						</form>
 					</div>
