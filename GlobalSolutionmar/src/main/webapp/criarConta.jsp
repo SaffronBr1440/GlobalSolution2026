@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Criar conta</title>
+<title>Cadastro</title>
 </head>
 <body>
 	<form id="formCadastro">
